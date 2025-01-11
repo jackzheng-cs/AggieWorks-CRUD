@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import { Pool } from "pg";
 
 const app = express();
 const port = 3000;
@@ -10,6 +11,15 @@ app.set("view engine", "ejs");
 // Middleware to serve static files and parse form data
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// PostgreSQL connection
+const pool = new Pool({
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
+});
 
 // Temporary in-memory storage for blogs
 const blogs = [];
