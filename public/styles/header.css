@@ -1,0 +1,42 @@
+/* Header CSS */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+
+  gap: 150px;
+  border-bottom: 1px solid black;
+}
+
+header a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+header a:hover,
+button:hover {
+  text-decoration: underline;
+}
+
+#createPostBtn {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+h1,
+h2,
+#createPostBtn {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 32px;
+}

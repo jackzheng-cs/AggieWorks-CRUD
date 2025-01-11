@@ -1,0 +1,23 @@
+<!-- Modal for Create/Edit Blog -->
+<div id="formModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <form id="blogForm" method="post">
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Blog Title"
+        required
+      />
+      <textarea
+        name="content"
+        id="content"
+        placeholder="Blog Content"
+        required
+      ></textarea>
+      <button type="submit" id="submitBtn">Post</button>
+    </form>
+    <button id="deleteBtn" style="display: none">Delete Blog</button>
+  </div>
+</div>

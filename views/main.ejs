@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/forms.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <%- include("header.ejs") %>
+
+      <main>
+        <section class="hero">
+          <img src="/images/hero.webp" alt="Hero Image" />
+
+          <div class="hero-content">
+            <h1>Welcome to <span>Blogin</span></h1>
+
+            <p>
+              A simple web application to create, modify, or delete blog posts!
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
