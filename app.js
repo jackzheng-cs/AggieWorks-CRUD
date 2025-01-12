@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 import express from "express";
 import bodyParser from "body-parser";
 import pkg from "pg";
-import path from "path";
 
 const { Pool } = pkg;
 
@@ -14,7 +13,6 @@ const port = process.env.PORT || 3000;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views"));
 
 // Middleware to serve static files and parse form data
 app.use(express.static("public"));
