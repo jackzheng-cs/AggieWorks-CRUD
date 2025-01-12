@@ -136,14 +136,7 @@ app.delete("/blogs/:id", async (req, res) => {
   }
 });
 
-// No favicon for vercel
-app.get("/favicon.ico", (req, res) => {
-  res.status(204).send();
-});
-
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
-
-export default app;
