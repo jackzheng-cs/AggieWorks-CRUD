@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 
 // Set up EJS as the view engine
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // Middleware to serve static files and parse form data
 app.use(express.static("public"));
