@@ -2,6 +2,8 @@ import dotenv from "dotenv";
 import express from "express";
 import bodyParser from "body-parser";
 import pkg from "pg";
+import path from "path";
+
 const { Pool } = pkg;
 
 // Load environmental variables
